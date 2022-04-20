@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"  />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<link rel="icon" href="https://www.weddingwishlist.com/media/favicon/default/favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="https://www.weddingwishlist.com/media/favicon/default/favicon.png" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="style1.css" />
+<link rel="stylesheet" type="text/css" href="style2.css" media="all" />
+<link rel="stylesheet" type="text/css" href="style3.css" media="print" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="jquery_noconflict.js"></script>
+<link rel="stylesheet" type="text/css" href="style4.css" media="all" />
+<link rel="stylesheet" type="text/css" href="common.css" media="all">
+
+<style type="text/css">
+	.red-button{
+		padding:15px !important;
+	}
+	#back.secondary:hover,#back.secondary:focus,#back.secondary:active{
+		background: #b50b21 none repeat scroll 0 0 !important;
+		border: 1px solid #b50b21 !important;
+	}
+	#back.secondary:hover span,#back.secondary:focus span,#back.secondary:active{
+		color: #fff !important;
+	}
+	#myModal .modal-content 
+	{
+		padding-bottom: 0px !important;
+	}
+	#myModal .modal-body
+	{
+		padding-top: 0px !important;
+	}
+	iframe#filecontainer .page
+	{
+	padding-top: 0px !important;	
+	}
+	.preview-content {
+		margin-bottom: 110px;
+		min-height: 100vh;
+			}
+	.footer-container-wrapper {
+		display: none;
+	}
+	.page-empty
+	{
+	padding: 0px !important;	
+	}
+	#header
+	{
+	position: initial !important;
+	padding: 0 !important;	
+	}
+	.div-space
+	{
+	height: 0px !important;	
+	}
+	.bottom-content
+	{
+	z-index: 999999999999;
+    margin: 0px auto;	
+    position: fixed;
+	bottom: 0;
+	border-top: 1px solid #ecebeb;
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding: 30px 0px 30px 30px;
+    background: #ffffff;
+    overflow:auto;
+	}
+	.prev-next
+	{
+	position: relative;
+	right: 1%;
+	font-weight: bold;
+	color: #49a3a6;	
+	font-size: 25px;
+	}
+	.prev-next a i
+	{
+	color: #49a3a6 !important;	
+	}
+	#popover-content,.popover
+	{
+	display: none !important;	
+	}
+	#footer
+	{
+	position: inherit !important;
+    float: none !important;
+    margin-bottom: 75px !important;
+	}
+	.couple-content
+	{
+	margin-bottom: 0px;	
+	}
+	.navbar-brand{
+		width:auto !important;
+		height:auto !important;
+		max-width:none !important;
+	}
+	.sec {
+		border-bottom: none !important;
+	}
+	#what-reg-msg-info {
+		z-index: 999999999999 !important;
+	}
+	.swatch-circle{
+		cursor:pointer;
+		height:45px;
+		width:45px;
+		border-radius:50%;
+		margin:0 3px;
+		display: inline-block;
+	}
+	.swatch-active{
+		border:1px solid #878787;
+	}
+	.color-swatch{
+		position: absolute;
+		right:20px;
+	}	
+	@media screen and (max-width: 767px) {
+		.red-button {
+			min-width: 213px !important;
+		}
+		.color-swatch{
+			position: absolute;			
+			padding-top: 20px;
+			width: 100%;
+			left:30px;	
+			top:0;
+		}
+		.swatch-circle{
+			height:30px;
+			width:30px;
+		}
+		.bottom-content{
+			padding:50px 0 20px 30px !important;			
+		}
+	}
+	@media screen and (max-width: 390px) {
+		.red-button {
+			min-width: 145px;
+			min-height: 40px;
+			padding: 8px !important;
+		}
+		.red-button span {
+			font-size: 14px !important;
+		}
+	}
+	@media screen and (max-width:767px){
+		button#back {
+			margin: 20px 0 !important;
+		}
+	}
+</style>
+
+
+
+<div class="preview-content body-background">
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Custom Css  -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,400italic,500italic,700italic,900italic%7CRoboto+Slab:400,300,700%7CPlayfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet nofollow' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="global-theme-1.css">
+    <link rel="stylesheet" href="layout-1.css">
+    <link rel="stylesheet" href="/weddingwebsite/assets/css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="registry_products.css">
+    <link rel="stylesheet" href="theme-1.css">
+
+  </head>
+  <p id="message" style="display: none;">Please use this on a mobile.</p>
+  <body class="body-background" id="demo">
+    <div hidden class="audio-div"></div>
+    <div class="ww-overlay" id="ww-overlay">
+        <div class="ww-loading-wrapper">
+            <div class="ww-loading-gif" id="ww-overlay-gif">
+              <img src="ww-loading.gif" style="border: none;" alt="Web-Page Loading"/>
+            </div>
+            <div class="ww-loading-message" id="ww-overlay-message">
+            </div>
+        </div>
+    </div>
+    <!-- Navbar  -->
+    <header class="ww-nav-bg-color">
+      <nav class="navbar navbar-expand-md navbar-light ww-nav-max-width">
+        <a class="navbar-brand">
+          <div class="logo-container">
+            <img src="theme-1.png" id="header-logo" alt="Website Logo" />
+          </div>
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="collapse navbar-collapse ww-nav-right" id="navbarCollapse">
+          <ul class="navbar-nav ww-nav desktop-header text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link functions_header" href="#functions">Functions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link travel_header" href="#travel">Travel</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Header end -->
+    <!-- Title Section  -->
+    <section class="title" id="title">
+      <div class="wedding-content text-center">
+        <h1 class="couple-name text-uppercase">श्रीराम & स्वाती</h1>
+        <div class="wedding-date text-capitalize">०४ मे २०२२</div>
+        <div class="wedding-venue text-capitalize">सिद्धिविनायक लॉन्स, संगमनेर</div>
+      </div>
+    </section>
+    <!-- Count Down Section Start -->
+    <section class="countdown-section">
+      <div class="countdown-banner header-countdown">
+        <div class="countdown-value">
+          <div class="timer days">00</div>
+          <div class="title">Days</div>
+        </div>
+        <div class="countdown-value">
+          <div class="timer hours">00</div>
+          <div class="title">Hours</div>
+        </div>
+        <div class="count-down-message">
+          Countdown<br>to our big day!
+        </div>
+        <div class="countdown-value">
+          <div class="timer min">00</div>
+          <div class="title d-none d-sm-none d-md-block">Minutes</div>
+          <div class="title d-sm-block d-md-none">Mins</div>
+        </div>
+        <div class="countdown-value">
+          <div class="timer sec">00</div>
+          <div class="title d-none d-sm-none d-md-block">Seconds</div>
+          <div class="title d-sm-block d-md-none">Secs</div>
+        </div>
+      </div>
+    </section>
+    <!-- Count Down Section Ends-->
+    <!-- Banner section  -->
+    <section class="banner" id="banner">
+      <img class="banner-image" src="theme1.jpg" alt="Banner image">
+    </section>
+    <section class="functions content-section active" id="functions">
+      <div class="container">
+        <div class="content-list">
+          <div class="row events-container">
+            <div class="col-sm-12 col-md-5 event-description-wrapper">
+              <div class="event-description-container">
+                <div class="event-description">
+                  <address>
+                    <h4 style="color: #b50b21;font-weight: 800;">चि. श्रीराम</h4>
+                    <p>सौ. सुनंदा व श्री. बाबुराव शांताराम कानवडे (सर) रा. निमगाव बु|| ता. संगमनेर जि. अ.नगर यांचे चिरंजीव</p>
+                    <h4>आणि</h4>
+                    <h4 style="color: #b50b21;font-weight: 800;">चि.सौ.कां. स्वाती</h4>
+                    <p>सौ. मनिषा व श्री. अशोक गबाजी बिबवे रा. वाडापूर(निमज) ता. संगमनेर जि. अ.नगर यांची कन्या</p>
+                    <h3 style="color: #b50b21;font-weight: 800;">|| यांचा शुभविवाह ||</h3>
+                  </address>
+                  <br>
+              </div>
+            </div>
+            </div>
+            <div class="virtual-services-iframe w-100 mt-20"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Function Section  -->
+    <section class="functions content-section active" id="functions">
+      <div class="container">
+        <div class="content-list">
+          <div class="row events-container">
+            <div class="col-sm-hidden col-md-7">
+              <div class="image-container-1">
+                <div id="event-01-img" class="event-img">
+                  <img src="wedding-function-wedding.jpg" alt="wedding-website-functions-thumbnail-01">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-5 event-description-wrapper">
+              <div class="event-description-container">
+              <div class="event-description">
+                <h3 id="event-01-name" class="event-name d-block d-md-none">विवाहस्थळ</h3>
+                <div class="image-container-2">
+                  <div id="event-01-img" class="event-img">
+                    <img src="wedding-function-wedding.jpg" alt="wedding-website-functions-thumbnail-01">
+                  </div>
+                </div>
+                <div id="event-01-day" class="event-date">०४ मे २०२२</div>
+                <br>
+                <address>
+                  <span id="event-01-map" class="event-map">सिद्धिविनायक लॉन्स</span>
+                  <span>गणपती मंदिराजवळ, संगमनेर ता. संगमनेर, जि. अ.नगर</span>
+                </address>
+                <br>
+            </div>
+            </div>
+            </div>
+            <div class="virtual-services-iframe w-100 mt-20"></div>
+        </div>
+        
+        <div class="row events-container"><div class="col-sm-hidden col-md-7"><div class="image-container-1"><div id="event-11-img" class="event-img"><img src="reception.jpg" alt="wedding-website-functions-thumbnail-11"></div></div></div><div class="col-sm-12 col-md-5 event-description-wrapper"><div class="event-description-container"><div class="event-description"><h3 id="event-11-name" class="event-name d-block d-md-none">Reception</h3><h3 id="event-11-name" class="event-name d-none d-md-block">Reception</h3><div class="image-container-2"><div id="event-11-img" class="event-img"><img src="reception.jpg" alt="wedding-website-functions-thumbnail-11"></div></div><div id="event-11-day" class="event-date">May 27, 2021<br>8:00 PM - 11:00 PM</div><br><address><span id="event-11-map" class="event-map">Taj Palace Hotel,Colaba, Mumbai</span></address><br><p id="event-11-text6" class="event-details" style="padding:5px 0 !important;">Dress Code: Gowns &amp; tuxedos</p><div style="margin:10px 0;padding-bottom:30px;"></div></div></div></div><div class="virtual-services-iframe w-100 mt-20"></div></div></div>
+      </div>
+    </section>
+    <!-- Functions section end  -->
+    <!-- Travel section  -->
+    <section class="travel content-section" id="travel">
+      <div class="container">
+        <div class="section-title">Travel</div>
+        <div class="content-list">
+        </div>
+      </div>
+    </section>
+    <!-- Travel section ends  -->
+
+    <!-- Gallery section Starts -->
+    <div class="content-section d-none" id="photo_gallery">
+      <div class="container">
+        <div class="section-title">Photo Gallery</div>
+        <div class="content-list">
+        </div>
+        <div class="section-content gallery-empty-content text-center">Couple has not shared any photos.</div>
+      </div>
+    </div>
+    <!-- Gallery section Ends -->
+
+
+    <!-- Count Down Section Start -->
+    <section class="countdown-section bottom-countdown">
+      <div class="countdown-banner header-countdown">
+        <div class="countdown-value">
+          <div class="timer days">00</div>
+          <div class="title">Days</div>
+        </div>
+        <div class="countdown-value">
+          <div class="timer hours">00</div>
+          <div class="title">Hours</div>
+        </div>
+        <div class="count-down-message">
+          Countdown<br>to our big day!
+        </div>
+        <div class="countdown-value">
+          <div class="timer min">00</div>
+          <div class="title d-none d-sm-none d-md-block">Minutes</div>
+          <div class="title d-sm-block d-md-none">Mins</div>
+        </div>
+        <div class="countdown-value">
+          <div class="timer sec">00</div>
+          <div class="title d-none d-sm-none d-md-block">Seconds</div>
+          <div class="title d-sm-block d-md-none">Secs</div>
+        </div>
+      </div>
+    </section>
+    <!-- Count Down Section Ends-->
+    <!--Footer Section start-->
+    <footer id="footer">
+      <div class="primary-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col text-uppercase">
+              <!-- <div class="footer-logo"> -->
+              <img src="theme-1.png" id="footer-logo" class="footer-logo" alt="footer-logo">
+              <h4 class="footer-name">Mansi &amp; Hari</h4>
+              <span class="footer-date">February 02, 2017</span>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Footer Section End-->
+  </body>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap.min.js"></script>
+  <script type="text/javascript" src="jquery-ui.js"></script>
+
+  <script type="text/javascript" src="layout_1.js"></script>
+
+  <script>
+    if (window.innerWidth > 500){
+        document.getElementById("demo").style.display = "none";
+        document.getElementById("message").style.display = "block";
+        
+    }
+  </script>
+</html>
+</div>
+</div>
+</body>
+</html>

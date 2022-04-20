@@ -1,0 +1,44 @@
+@font-face{
+    font-family: 'Champagne';
+    src: url('/weddingwebsite/assets/fonts/champagne/champagne.ttf');
+}
+.countdown-section.bottom-countdown{
+    color:var(--text-color-2) !important;
+}
+.body-background {
+    background: var(--body-background) repeat !important;
+    background-size: 100% !important;
+}
+#header-logo {
+    top: 2px;
+}
+/* .bottom-countdown .countdown-banner .timer {
+    font-weight: bold;
+} */
+.ourstory-all-sections p {
+    color: #757575 !important;
+}
+.footer-name{
+    text-transform: uppercase;
+}
+.css-shape:before {
+    left: -12px;
+}
+.css-shape:after {
+    right: -12px;
+}
+#share-link .section-content { color: var(--text-color-2) !important; }
+@media screen and (max-width: 767px) {
+    #header-logo {
+        width: 50px !important;
+        left: 5% !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .css-shape:before {
+        left: -10px;
+    }
+    .css-shape:after {
+        right: -10px;
+    }
+}
