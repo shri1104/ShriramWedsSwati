@@ -215,7 +215,7 @@
               <a class="nav-link functions_header" href="#functions">Functions</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link travel_header" href="#travel">Travel</a>
+              <a class="nav-link travel_header" href="#travel">Location</a>
             </li>
           </ul>
         </div>
@@ -234,23 +234,23 @@
     <section class="countdown-section">
       <div class="countdown-banner header-countdown">
         <div class="countdown-value">
-          <div class="timer days">00</div>
+          <div class="timer days" id="days-1">00</div>
           <div class="title">Days</div>
         </div>
         <div class="countdown-value">
-          <div class="timer hours">00</div>
+          <div class="timer hours" id="hours-1">00</div>
           <div class="title">Hours</div>
         </div>
         <div class="count-down-message">
           Countdown<br>to our big day!
         </div>
         <div class="countdown-value">
-          <div class="timer min">00</div>
+          <div class="timer min" id="min-1">00</div>
           <div class="title d-none d-sm-none d-md-block">Minutes</div>
           <div class="title d-sm-block d-md-none">Mins</div>
         </div>
         <div class="countdown-value">
-          <div class="timer sec">00</div>
+          <div class="timer sec" id="sec-1">00</div>
           <div class="title d-none d-sm-none d-md-block">Seconds</div>
           <div class="title d-sm-block d-md-none">Secs</div>
         </div>
@@ -261,7 +261,7 @@
     <section class="banner" id="banner">
       <img class="banner-image" src="theme1.jpg" alt="Banner image">
     </section>
-    <section class="functions content-section active" id="functions">
+    <section class="functions content-section active">
       <div class="container">
         <div class="content-list">
           <div class="row events-container">
@@ -269,12 +269,27 @@
               <div class="event-description-container">
                 <div class="event-description">
                   <address>
+                    <p>श्री. गणेशाय नम:</p>
+                    <p>स. न. वि. वि. आमचे येथे श्रीहरी कृपेने</p>
                     <h4 style="color: #b50b21;font-weight: 800;">चि. श्रीराम</h4>
                     <p>सौ. सुनंदा व श्री. बाबुराव शांताराम कानवडे (सर) रा. निमगाव बु|| ता. संगमनेर जि. अ.नगर यांचे चिरंजीव</p>
                     <h4>आणि</h4>
                     <h4 style="color: #b50b21;font-weight: 800;">चि.सौ.कां. स्वाती</h4>
                     <p>सौ. मनिषा व श्री. अशोक गबाजी बिबवे रा. वाडापूर(निमज) ता. संगमनेर जि. अ.नगर यांची कन्या</p>
                     <h3 style="color: #b50b21;font-weight: 800;">|| यांचा शुभविवाह ||</h3>
+                    <br>
+                    <br>
+                    <p>शिवछत्रपतींच्या हिंदवी स्वराज्यमध्ये महाराष्ट्राच्या पावन भूमीत मराठमोळ्या वातावरणात ग्रामदेवतेच्या शितल छायेत व कुलदैवत भवानी देवीच्या आशीर्वादाने मिती वैशाख कृ || ३ शके १९४४ बुधवार दि.०४ मे २०२२ रोजी दुपारी १२.३१ वा. या शुभमुहूर्तावर आयोजित करण्यात आलेला आहे, तरी या शुभमंगलप्रसंगी आपण उपस्थित राहून वधू-वरांस शुभाशिर्वाद द्यावेत, ह्या साठीच हे आग्रहाचं निमंत्रण ..!</p>
+                    <h4 style="color: #b50b21;font-weight: 800;">निमंत्रक</h4>
+                    <p style="margin-bottom: 0rem;">सौ. सुनंदा व श्री. बाबुराव शांताराम कानवडे</p>
+                    <p style="margin-bottom: 0rem;">सौ. शैला व श्री. रमेश शांताराम कानवडे</p>
+                    <p style="margin-bottom: 0rem;">चि. आदित्य रमेश कानवडे</p>
+                    <br>
+                    <h5 style="color: #b50b21;font-weight: 800;">किलबिल परिवार</h5>
+                    <p style="margin-bottom: 0rem;">धृती</p>
+                    <br>
+                    <h5 style="color: #b50b21;font-weight: 800;">समस्त कानवडे व कातोरे पाटील परिवार</h5>
+                    
                   </address>
                   <br>
               </div>
@@ -300,7 +315,7 @@
             <div class="col-sm-12 col-md-5 event-description-wrapper">
               <div class="event-description-container">
               <div class="event-description">
-                <h3 id="event-01-name" class="event-name d-block d-md-none">विवाहस्थळ</h3>
+                <h3 id="event-01-name" class="event-name d-block d-md-none" style="font-weight: 800;">विवाहस्थळ</h3>
                 <div class="image-container-2">
                   <div id="event-01-img" class="event-img">
                     <img src="wedding-function-wedding.jpg" alt="wedding-website-functions-thumbnail-01">
@@ -319,55 +334,71 @@
             <div class="virtual-services-iframe w-100 mt-20"></div>
         </div>
         
-        <div class="row events-container"><div class="col-sm-hidden col-md-7"><div class="image-container-1"><div id="event-11-img" class="event-img"><img src="reception.jpg" alt="wedding-website-functions-thumbnail-11"></div></div></div><div class="col-sm-12 col-md-5 event-description-wrapper"><div class="event-description-container"><div class="event-description"><h3 id="event-11-name" class="event-name d-block d-md-none">Reception</h3><h3 id="event-11-name" class="event-name d-none d-md-block">Reception</h3><div class="image-container-2"><div id="event-11-img" class="event-img"><img src="reception.jpg" alt="wedding-website-functions-thumbnail-11"></div></div><div id="event-11-day" class="event-date">May 27, 2021<br>8:00 PM - 11:00 PM</div><br><address><span id="event-11-map" class="event-map">Taj Palace Hotel,Colaba, Mumbai</span></address><br><p id="event-11-text6" class="event-details" style="padding:5px 0 !important;">Dress Code: Gowns &amp; tuxedos</p><div style="margin:10px 0;padding-bottom:30px;"></div></div></div></div><div class="virtual-services-iframe w-100 mt-20"></div></div></div>
+        <div class="row events-container">
+          <div class="col-sm-hidden col-md-7">
+            <div class="image-container-1">
+              <div id="event-11-img" class="event-img">
+                <img src="reception.jpg" alt="wedding-website-functions-thumbnail-11">
+              </div>
+          </div>
+          </div>
+          <div class="col-sm-12 col-md-5 event-description-wrapper">
+            <div class="event-description-container">
+              <div class="event-description">
+                <h3 id="event-11-name" class="event-name d-block d-md-none" style="font-weight: 800;">हळदी व साखरपुडा</h3>
+                <div class="image-container-2">
+                  <div id="event-11-img" class="event-img">
+                    <img src="reception.jpg" alt="wedding-website-functions-thumbnail-11">
+                  </div>
+                </div>
+                <div id="event-01-day" class="event-date">मंगळवार, ०३ मे २०२२ रोजी सायं. ६ वा.</div>
+                <br>
+                <address>
+                  <span id="event-01-map" class="event-map">विवाहस्थळी</span>
+                </address>
+                <br>
+              </div>
+            </div>
+          </div>
+        <div class="virtual-services-iframe w-100 mt-20"></div>
+      </div>
+      </div>
       </div>
     </section>
     <!-- Functions section end  -->
     <!-- Travel section  -->
     <section class="travel content-section" id="travel">
       <div class="container">
-        <div class="section-title">Travel</div>
+        <div class="section-title">Location</div>
         <div class="content-list">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20412.950967746518!2d74.24123744637016!3d19.579014354491214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdcfe2cbcd9a8eb%3A0x4aff8160bbaaa2bb!2sShree%20Siddhivinayak%20Lawns!5e0!3m2!1sen!2sin!4v1650456249197!5m2!1sen!2sin" width="330" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </section>
     <!-- Travel section ends  -->
-
-    <!-- Gallery section Starts -->
-    <div class="content-section d-none" id="photo_gallery">
-      <div class="container">
-        <div class="section-title">Photo Gallery</div>
-        <div class="content-list">
-        </div>
-        <div class="section-content gallery-empty-content text-center">Couple has not shared any photos.</div>
-      </div>
-    </div>
-    <!-- Gallery section Ends -->
 
 
     <!-- Count Down Section Start -->
     <section class="countdown-section bottom-countdown">
       <div class="countdown-banner header-countdown">
         <div class="countdown-value">
-          <div class="timer days">00</div>
-          <div class="title">Days</div>
+          <div class="timer days" id="days" style="font-weight: 400;">00</div>
+          <div class="title" style="font-weight: 400;">Days</div>
         </div>
         <div class="countdown-value">
-          <div class="timer hours">00</div>
-          <div class="title">Hours</div>
+          <div class="timer hours" id="hours" style="font-weight: 400;">00</div>
+          <div class="title" style="font-weight: 400;">Hours</div>
         </div>
         <div class="count-down-message">
           Countdown<br>to our big day!
         </div>
         <div class="countdown-value">
-          <div class="timer min">00</div>
-          <div class="title d-none d-sm-none d-md-block">Minutes</div>
-          <div class="title d-sm-block d-md-none">Mins</div>
+          <div class="timer min"  id="min" style="font-weight: 400;">00</div>
+          <div class="title d-sm-block d-md-none" style="font-weight: 400;">Mins</div>
         </div>
         <div class="countdown-value">
-          <div class="timer sec">00</div>
-          <div class="title d-none d-sm-none d-md-block">Seconds</div>
-          <div class="title d-sm-block d-md-none">Secs</div>
+          <div class="timer sec"  id="sec" style="font-weight: 400;">00</div>
+          <div class="title d-sm-block d-md-none" style="font-weight: 400;">Secs</div>
         </div>
       </div>
     </section>
@@ -380,8 +411,8 @@
             <div class="col text-uppercase">
               <!-- <div class="footer-logo"> -->
               <img src="theme-1.png" id="footer-logo" class="footer-logo" alt="footer-logo">
-              <h4 class="footer-name">Mansi &amp; Hari</h4>
-              <span class="footer-date">February 02, 2017</span>
+              <h4 class="footer-name">श्रीराम & स्वाती</h4>
+              <span class="footer-date">०४ मे २०२२</span>
               <!-- </div> -->
             </div>
           </div>
@@ -403,6 +434,53 @@
         
     }
   </script>
+
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("May 4, 2022 12:31:00").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get today's date and time
+    var now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    // Output the result in an element with id="demo"
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("min").innerHTML = minutes;
+    document.getElementById("sec").innerHTML = seconds;
+
+    document.getElementById("days-1").innerHTML = days;
+    document.getElementById("hours-1").innerHTML = hours;
+    document.getElementById("min-1").innerHTML = minutes;
+    document.getElementById("sec-1").innerHTML = seconds;
+      
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
+  <script>
+    function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(51.508742,-0.120850),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
 </html>
 </div>
 </div>
